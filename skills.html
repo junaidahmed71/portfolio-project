@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="res.css" >
+    <link rel="icon" href="img/logoo.png" >
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+  </head>
+  <body>
+    <div class="navv">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="h-page">
+          <img src="img/ja.png" alt="" >
+        </a>
+        <a href="index.html" class="active">Home</a>
+        <a href="Testimonials.html">Testimonials</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            History
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="academic.html">Academic</a>
+            <a href="Professional.html">Professional</a>
+          </div>
+        </div>
+
+        <a href="skills.html">skills</a>
+        <a href="contact.html">Contact Us</a>
+
+        >
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >;
+      </div>
+    </div>
+    <div class="banner-home">
+      <h2 class="ban-txt">
+        <span class="iam">I'm</span>
+        <span class="text"></span>
+      </h2>
+    </div>
+
+    <div>
+      <h1 class="head">
+        <span> Skills </span>
+      </h1>
+      <div class="hhh">
+        <div class="prof-det">
+          <p class="h-sk">
+            Database &#8594;
+            <span> MYSQl </span>
+          </p>
+          <div class="container">
+            <div class="skills db">90%</div>
+          </div>
+
+          <p class="h-sk">
+            Programming Languages &#8594;
+            <span> C++, Javascript,HTML5, CSS3, Php. </span>
+          </p>
+          <div class="container">
+            <div class="skills pl">80%</div>
+          </div>
+
+          <p class="h-sk">
+            Frame Work &#8594;
+            <span> Bootstrap4,Jquery </span>
+          </p>
+          <div class="container">
+            <div class="skills framew">65%</div>
+          </div>
+
+          <p class="h-sk">
+            Tools &#8594;
+            <span>
+              Notepad++,Sublime, Dev Cpp , C-Free , Visual Studio2013,atom,xampp
+              .
+            </span>
+          </p>
+          <div class="container">
+            <div class="skills tools">60%</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="thumbnails">
+      <div class="thumbnail">
+        <a href="currency.html" target="_blank">
+          <img src="img/currency.png" alt="Thumbnail" style="width: 100%" >
+          <div class="thumbContainer">
+            <h4><b>Currency Converter</b></h4>
+          </div>
+        </a>
+      </div>
+      <div class="thumbnail">
+        <a href="forcaster.html" target="_blank">
+          <img src="img/forecast.png" alt="Thumbnail" style="width: 100%" >
+          <div class="thumbContainer">
+            <h4><b>Forecaster</b></h4>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="footer">
+      <h4>j026599l@student.staffs.acc.uk</h4>
+    </div>
+    <script src="js/nav_script.js"></script>
+    <script>
+      var typing = new Typed(".text", {
+        strings: [
+          "",
+          "Youtuber",
+          "Freelancer",
+          "Graphics Designer",
+          "Web Designer",
+          "Web Developer",
+        ],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true,
+      });
+    </script>
+    <script>
+      var slideIndex = 0;
+      carouse2();
+
+      function carouse2() {
+        var i;
+        var x = document.getElementsByClassName("mySlides tes");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carouse2, 2000);
+      }
+    </script>
+  </body>
+</html>
