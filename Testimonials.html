@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="res.css" >
-    <link rel="icon" href="img/logoo.png" >
+    <link rel="stylesheet" href="res.css" />
+    <link rel="icon" href="img/logoo.png" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
       integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
@@ -15,13 +15,13 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    >
+    />
   </head>
   <body>
     <div class="navv">
       <div class="topnav" id="myTopnav">
         <a href="index.html" class="h-page">
-          <img src="img/ja.png" alt="" >
+          <img src="img/ja.png" alt="" />
         </a>
         <a href="index.html" class="active">Home</a>
         <a href="Testimonials.html">Testimonials</a>
@@ -63,14 +63,14 @@
       <div class="w3-content w3-section" style="max-width: 60%; margin: auto">
         <div class="mySlides tes">
           <div class="container">
-            <img src="img/testimonials1.jpg" alt="Avatar" style="width: 90px" >
+            <img src="img/testimonials1.jpg" alt="Avatar" style="width: 90px" />
             <p class="m-t"><span>Rebecca Flex.</span> CEO at Company.</p>
             <p>No one is better than Mubashar.</p>
           </div>
         </div>
         <div class="mySlides tes">
           <div class="container">
-            <img src="img/testimonials2.jpg" alt="Avatar" style="width: 90px" >
+            <img src="img/testimonials2.jpg" alt="Avatar" style="width: 90px" />
             <p class="m-t"><span>Chris Fox.</span> CEO at Mighty Schools.</p>
             <p>Hamza saved us from a web disaster.</p>
           </div>
@@ -81,7 +81,7 @@
               src="img/testimonials-3jpg.jpg"
               alt="Avatar"
               style="width: 90px"
-            >
+            />
             <p class="m-t"><span>Saul Goodman.</span> Entrepreneur.</p>
             <p>Bilal saved us from a web disaster.</p>
           </div>
@@ -107,24 +107,6 @@
         backSpeed: 40,
         loop: true,
       });
-    </script>
-    <script>
-      var slideIndex = 0;
-      carouse2();
-
-      function carouse2() {
-        var i;
-        var x = document.getElementsByClassName("mySlides tes");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {
-          slideIndex = 1;
-        }
-        x[slideIndex - 1].style.display = "block";
-        setTimeout(carouse2, 2000);
-      }
     </script>
   </body>
 </html>
