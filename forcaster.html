@@ -10,12 +10,19 @@
     <script src="assets/libs/chartjs.js"></script>
   </head>
   <body>
+    <!-- ------ CHART START ------ -->
+
     <center>
       <div class="chart">
         <canvas id="fuelChart"></canvas>
       </div>
     </center>
+
+    <!-- ------ CHART START ------ -->
+
     <div class="container">
+      <!-- ------ FILTERS START ------ -->
+
       <div class="filters">
         <select id="filter">
           <option value="">filter columns</option>
@@ -56,6 +63,11 @@
           <option value="2022">2022</option>
         </select>
       </div>
+
+      <!-- ------ FILTERS END ------ -->
+
+      <!-- ------ TABLES START ------ -->
+
       <div class="tableContainer">
         <table>
           <th>
@@ -69,11 +81,19 @@
           </th>
         </table>
       </div>
+
+      <!-- ------ TABLES END ------ -->
+
       <div class="tableCon hide"></div>
+
+      <!-- ------ BUTTONS START ------ -->
+
       <div class="btns">
         <button id="history">Historical</button>
         <button id="forecast">Forecast</button>
       </div>
+
+      <!-- ------ BUTTONS END ------ -->
     </div>
     <input type="text" id="hiddenInput" />
     <script src="assets/js/script.js"></script>
