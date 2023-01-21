@@ -47,6 +47,8 @@ for (i of years) {
   tables.push(document.getElementsByClassName(i)[0]);
 }
 
+buildTable(dataset, 2022, "0");
+
 filter.addEventListener("change", (e) => {
   tableContainer.innerHTML = "";
   tables = [];
@@ -77,6 +79,15 @@ tableContainer.addEventListener("scroll", (e) => {
     }
     e.target.scrollLeft = getOffsetLeft(tables[0]) - 50;
   }
+  if (e.target.scrollLeft > getOffsetLeft(tables[26]) - 50) {
+    var futureAlerted = sessionStorage.getItem("futureAlerted") || "";
+    if (futureAlerted != "yes") {
+      alert("Data after this is not available in history section.");
+      sessionStorage.setItem("futureAlerted", "yes");
+    }
+    e.target.scrollLeft = getOffsetLeft(tables[26]) - 50;
+  }
+
   if (getOffsetLeft(tables[26]) < e.target.scrollLeft + 150) {
     if (hiddenInput.value != tables[26].className) {
       hiddenInput.value = tables[26].className;
@@ -400,15 +411,6 @@ function buildTable(data, year, filter) {
           <td>${data[i].Month} ${data[i].year}</td>
           `;
           break;
-        // default:
-        //   row = `
-        //   <td>${data[i].Month} ${data[i].year}</td>
-        //   <td>${data[i].solid.toFixed(1)}</td>
-        //   <td>${data[i].gas.toFixed(1)}</td>
-        //   <td>${data[i].electricity.toFixed(1)}</td>
-        //   <td>${data[i].liquid.toFixed(1)}</td>
-        //   `;
-        //   break;
       }
       table.innerHTML += row;
     }
