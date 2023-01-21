@@ -179,6 +179,17 @@
 
     <script src="https://www.floatrates.com/scripts/converter.js"></script>
 
+    <script type="text/javascript">
+      (function () {
+        var js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = true;
+        js.src = "//www.floatrates.com/scripts/converter.js";
+        var sjs = document.getElementsByTagName("script")[0];
+        sjs.parentNode.insertBefore(js, sjs);
+      })();
+    </script>
+
     <script src="js/converter.js"></script>
     <script src="js/nav_script.js"></script>
   </body>
