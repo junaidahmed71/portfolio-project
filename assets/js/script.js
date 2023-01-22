@@ -226,7 +226,7 @@ tableContainer.addEventListener("scroll", (e) => {
   }
 });
 
-tableContainer.scrollLeft = tables[26].offsetLeft;
+tableContainer.scrollLeft = tables[26].offsetLeft - 50;
 
 buildForecastedTable(getLastYearData());
 
