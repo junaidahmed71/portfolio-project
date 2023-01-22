@@ -71,6 +71,8 @@ window.addEventListener("load", () => {
 });
 
 tableContainer.addEventListener("scroll", (e) => {
+  console.log(e.target.scrollLeft);
+  console.log(getOffsetLeft(tables[26]));
   if (e.target.scrollLeft < getOffsetLeft(tables[0]) - 50) {
     var alerted = sessionStorage.getItem("alerted") || "";
     if (alerted != "yes") {
@@ -226,7 +228,7 @@ tableContainer.addEventListener("scroll", (e) => {
   }
 });
 
-tableContainer.scrollLeft = tables[26].offsetLeft - 50;
+tableContainer.scrollLeft = (getOffsetLeft(tables[26]) - 50);
 
 buildForecastedTable(getLastYearData());
 
