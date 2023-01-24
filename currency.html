@@ -131,8 +131,6 @@
     </script>
 
     <script>
-      // document.getElementById("source_currency option").addEventListener("click", myFunctio);
-
       document.getElementById("excc").addEventListener("click", myFunctio);
 
       function myFunctio() {
@@ -165,16 +163,7 @@
           Source_amount + " " + Source + " = " + " ";
         document.getElementById("final-con").innerHTML =
           destination_amount + "  " + destination;
-
-        // alert(Source + " " + Source_amount + " " + destination  + " " + destination_amount + "today rate : " + rate_per)
-
-        // document.getElementByID("source-cur").style.display  = "none";
-        // alert(tokenAmount)
-        // chk(rate_per)
       }
-      // function chk( ty ){
-      //   document.getElementById("source-cur").innerHTML = ty;
-      // }
     </script>
 
     <script src="https://www.floatrates.com/scripts/converter.js"></script>
@@ -188,6 +177,7 @@
         var sjs = document.getElementsByTagName("script")[0];
         sjs.parentNode.insertBefore(js, sjs);
       })();
+      destination1.options.selectedIndex = 1;
     </script>
 
     <script src="js/converter.js"></script>
